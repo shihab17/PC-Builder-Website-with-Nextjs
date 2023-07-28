@@ -1,0 +1,13 @@
+
+.menu_items a{
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.line{
+  height: 5px;
+  margin: 10px 0;
+  background: #000;
+}
