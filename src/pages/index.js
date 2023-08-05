@@ -1,10 +1,12 @@
 import React from 'react';
 import RootLayout from '../../components/Layouts/RootLayout';
+import AllProduct from '../../components/UI/AllProduct';
 
-const Home = () => {
+const Home = ({allProducts}) => {
   return (
     <div>
       <h1>Home</h1>
+      <AllProduct products={allProducts.data}></AllProduct>
     </div>
   );
 };
@@ -21,7 +23,7 @@ export const getStaticProps = async () => {
   console.log(data);
   return {
     props: {
-      allProducts: data?.data
+      allProducts: data
     }
   }
 }
